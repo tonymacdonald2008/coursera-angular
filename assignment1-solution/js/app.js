@@ -18,12 +18,12 @@
       if ($scope.list.length == 0){
 
         $scope.message = "Please enter data first";
-        $scope.messagestyle = "color: red";
-        $scope.boxstyle = "border-color: #f00";
+        $scope.messagestyle = "red";
+        $scope.boxstyle = "#f00";
 
       } else {
-        $scope.messagestyle = "color: green";
-        $scope.boxstyle = "border-color: green";
+        $scope.messagestyle = "green";
+        $scope.boxstyle = "green";
         if (count < 4) {
           $scope.message = "Enjoy";
         } else {
