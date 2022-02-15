@@ -1,0 +1,38 @@
+<div class="col-12">
+<!-- <table>
+  <tr>
+    <th>name</th>
+    <th>short name</th>
+    <th>description</th>
+  </tr>
+  <tr ng-repeat="item in items">
+    <td>{{ item.name }}</td>
+    <td>{{ item.short_name}}</td>
+    <td>{{item.description}}</td>
+    <td><button ng-click="onRemove({index: $index});">Don't want this one!</button></td>
+  </tr>
+</table> -->
+
+  <ul>
+    <div class="row">
+      <li ng-repeat="item in items">
+        <article class="col-2">
+          {{ item.name }}
+        </article>
+        <article class="col-2">
+          {{ item.short_name}}
+        </article>
+        <article class="col-6">
+          {{item.description}}
+        </article>
+        <article class="col-2">
+          <button ng-click="onRemove({index: $index});">Don't want this one!</button>
+        </article>
+        <!-- {{ item.name }}, {{ item.short_name}},{{item.description}}
+        <button ng-click="onRemove({index: $index});">Remove Item</button> -->
+      </li>
+    </div>
+
+
+  </ul>
+</div>
