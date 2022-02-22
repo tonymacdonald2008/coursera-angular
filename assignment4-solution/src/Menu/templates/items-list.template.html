@@ -1,0 +1,13 @@
+<div class="">
+  <h3>{{ctrl.info.name}}</h3>
+  <h4>Special Instructions: </h4>
+  <div class="">
+    {{ctrl.info.special_instructions}}
+  </div>
+  <h4>Menu Items: </h4>
+  <ul>
+    <li ng-repeat="item in ctrl.items">
+      {{item.short_name}} {{item.name}}
+    </li>
+  </ul>
+</div>
